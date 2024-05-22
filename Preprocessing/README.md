@@ -20,7 +20,7 @@ The checar_no_guion.sh script checks the files in the archivos_no_guion folder a
 
 These scripts work together to separate and organize the sequence files based on their naming conventions, ensuring that paired-end read files are grouped together in the archivos_guion folder, while single-end read files are placed in the archivos_no_guion folder. The lista.txt file keeps track of the unique file names for reference.
 
-Finally, we applied Trimmomatic to trim and filter low-quality reads.
+After that, we applied Trimmomatic to trim and filter low-quality reads.
 
 Two Bash programs were used:
 
@@ -31,3 +31,9 @@ trim.sh
 This script sends paired-end reads to Trimmomatic for trimming and filtering.
 trim_2.sh
 This script sends single-end reads to Trimmomatic for trimming and filtering.
+
+After applying Trimmomatic to the sequences, we obtained files with endings in the ".trim.fastq.gz" format and files with endings in the "un.trim.fastq.gz" format.
+
+The files ending with ".trim.fastq.gz" are the trimmed and filtered reads that passed the quality control process in Trimmomatic. These files contain high-quality reads that are suitable for further analysis, such as assembly or alignment.
+
+On the other hand, the files ending with "un.trim.fastq.gz" are the reads that did not pass the quality control thresholds set in Trimmomatic. These reads are considered low-quality and were discarded.
