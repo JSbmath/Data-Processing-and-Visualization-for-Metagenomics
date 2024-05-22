@@ -19,3 +19,15 @@ The salvar_lista.sh script creates a list of unique file names without extension
 The checar_no_guion.sh script checks the files in the archivos_no_guion folder against the list in lista.txt. If a file name is not found in the list, it is moved to the archivos_guion folder.
 
 These scripts work together to separate and organize the sequence files based on their naming conventions, ensuring that paired-end read files are grouped together in the archivos_guion folder, while single-end read files are placed in the archivos_no_guion folder. The lista.txt file keeps track of the unique file names for reference.
+
+Finally, we applied Trimmomatic to trim and filter low-quality reads.
+
+Two Bash programs were used:
+
+*trim.sh
+*trim_2.sh
+
+trim.sh
+This script sends paired-end reads to Trimmomatic for trimming and filtering.
+trim_2.sh
+This script sends single-end reads to Trimmomatic for trimming and filtering.
