@@ -1,4 +1,4 @@
-#first run create_phyloseq.R
+#first run Manipulating_Phyloseq_objects.R
 # Subset the merged_metagenomes object to include only bacteria
 merged_metagenomes <- subset_taxa(merged_metagenomes, Kingdom == "Bacteria")
 
