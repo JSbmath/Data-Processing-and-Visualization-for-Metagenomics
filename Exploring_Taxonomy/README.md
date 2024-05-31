@@ -15,8 +15,6 @@ Regarding the alpha diversity plots (Observed, Chao1, and Shannon):
 
 In the NMDS plot showing the beta diversity of our samples, the points are distributed throughout the NMDS space, suggesting considerable variation in species composition among the samples. However, some clustering or gradient formation is also observed, with several points located very close to each other, particularly near the origin (0,0). This indicates that some samples have a fairly similar species composition.
 
-Here's the corrected version with improved grammar:
-
 In the absolute abundance plot, we can see that Acidobacteria appears to be the most abundant phylum in the sample, closely followed by Deferribacteres.
 
 On the other hand, in the relative abundance plot, we can see that Actinobacteria and Bacteroidetes are the dominant phyla, each constituting around 30-35% of the bacterial community.
